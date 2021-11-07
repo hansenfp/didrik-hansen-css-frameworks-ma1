@@ -1,0 +1,30 @@
+.cards-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    background: $primary-color;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.cards-body {
+    width: 20vw;
+    height: 20vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 991px) {
+    .cards {
+        flex-direction: column;
+    }
+    .cards-body {
+        width: 100%;
+        height: 50%;
+    }
+}
